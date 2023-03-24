@@ -8,13 +8,13 @@
 <form action="http://127.0.0.1:5000/decision" method='post'>
 
   <label for="personal_code">Personal code:</label><br>
-  <input type="text" name='personal_code'><br>
+  <input type="text" name='personal_code' required><br>
 
   <label for="loan_amount">Loan amount:</label><br>
-  <input type="text" name='loan_amount'><br><br>
+  <input type="number" name='loan_amount' min="2000" max="10000" required><br><br>
 
   <label for="loan_period">Loan period:</label><br>
-  <input type="text" name='loan_period'><br><br>
+  <input type="number" name='loan_period' min="12" max="60" required><br><br>
 
   <input type="submit" value="Submit">
 </form>
