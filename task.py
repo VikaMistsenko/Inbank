@@ -59,7 +59,6 @@ def make_decision():
         maximum_loan_period = 0
     else:
         decision = 'positive'
-
     print(personal_code)
     print(loan_amount)
     print(loan_period)
